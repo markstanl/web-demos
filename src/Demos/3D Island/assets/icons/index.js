@@ -11,3 +11,5 @@ export { default as tailwindcss } from './tailwind.png';
 export { default as linkedin } from './linkedin.png';
 export { default as nodejs } from './nodejs.png';
 export { default as contact } from './contact.png';
+export { default as soundOn } from './soundon.png';
+export { default as soundOff } from './soundoff.png';

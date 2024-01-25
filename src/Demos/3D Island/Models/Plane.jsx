@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import planeScene from '../assets/3D/plane.glb';
 
-const Plane = ({ isRotating, planeScale, planePosition, ...props }) => {
+const Plane = ({ isRotating, scale, position, ...props }) => {
     const { scene } = useThree();
     const [animationAction, setAnimationAction] = useState(null);
     const modelRef = useRef();
@@ -16,8 +16,8 @@ const Plane = ({ isRotating, planeScale, planePosition, ...props }) => {
             const model = gltf.scene;
             modelRef.current = model;
 
-            model.scale.set(...planeScale);
-            model.position.set(...planePosition);
+            model.scale.set(...scale);
+            model.position.set(...position);
             model.rotation.set(0, 20, 0);
 
             const mixer = new THREE.AnimationMixer(model);
@@ -30,10 +30,10 @@ const Plane = ({ isRotating, planeScale, planePosition, ...props }) => {
 
     useEffect(() => {
         if (modelRef.current) {
-            modelRef.current.scale.set(...planeScale);
-            modelRef.current.position.set(...planePosition);
+            modelRef.current.scale.set(...scale);
+            modelRef.current.position.set(...position);
         }
-    }, [planeScale, planePosition]);
+    }, [scale, position]);
 
     useFrame((state, delta) => {
         if (animationAction) {

@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useEffect } from 'react';
+import React, { Suspense, useState, useEffect, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Loader from './Loader.jsx';
 import Island from '../Models/island.jsx';
@@ -6,7 +6,26 @@ import Sky from '../Models/Sky.jsx';
 import Plane from '../Models/Plane.jsx';
 import HomeInfo from './HomeInfo.jsx';
 
+import { soundOn, soundOff } from '../assets/icons';
+
+import audio from '../assets/audio.mp3';
+
 export default function Home() {
+
+    const audioRef = useRef(new Audio(audio));
+    audioRef.current.volume = 0.3;
+    audioRef.current.loop = true;
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    useEffect(() => {
+        if (isPlaying) {
+            audioRef.current.play();
+        }
+
+        return () => {
+            audioRef.current.pause();
+        }
+    });
 
     const [isRotating, setIsRotating] = useState(false);
 
@@ -74,6 +93,15 @@ export default function Home() {
                     />
                 </Suspense>
             </Canvas>
+
+            <div className='absolute bottom-2 left-2'>
+                <img
+                    src={isPlaying ? soundOn : soundOff}
+                    alt='sound'
+                    className='w-10 h-10 cursor-pointer object-contain'
+                    onClick={() => setIsPlaying(!isPlaying)}
+                />
+            </div>
         </section>);
 }
 
