@@ -17,8 +17,8 @@ const ThreeDIslandButtons = () => {
         let localX = x - window.innerWidth / 2
         let localY = y - window.innerHeight / 2
 
-        let returnY = localX / window.innerWidth * Math.PI * 0.04
-        let returnX = localY / window.innerHeight * Math.PI * 0.04
+        let returnY = localX / window.innerWidth * Math.PI * 0.08
+        let returnX = localY / window.innerHeight * Math.PI * 0.06
 
 
         return [returnX, returnY, Math.PI]
@@ -37,17 +37,20 @@ const ThreeDIslandButtons = () => {
         }
     }, [])
 
-    console.log(rotation)
-
 
     // [ Lowest: Pi*0.04, Pi*-.004,    most right 0 + Math.PI * 0.04 most left negative]
 
     return (
-        <Canvas className='w-full h-full' gl={{ antialias: true, toneMapping: THREE.NoToneMapping }}
+        <Canvas className='w-full h-full'
+            gl={{ antialias: true, toneMapping: THREE.NoToneMapping }}
+            style={{ pointerEvents: 'auto' }}
             linear>
-            <ambientLight intensity={0.5} />
-            <directionalLight color={'#FFFFFF'} intensity={1} position={[0, 10, 5]} />
-            <Model rotation={rotation} />
+
+            <Suspense fallback={null}>
+                <ambientLight intensity={0.6} />
+                <directionalLight color={'#FFFFFF'} intensity={0.9} position={[0, 10, 5]} />
+                <Model rotation={rotation} />
+            </Suspense>
         </Canvas>
     )
 }
