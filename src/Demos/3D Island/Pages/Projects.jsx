@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <section className="max-container">
             <h1 className='head-text'>
-                My <span className='blue-text-gradient font-semibold drop-shadow'>
+                My <span className='primary-accent-gradient font-semibold drop-shadow'>
                     Projects</span> <br />
             </h1>
 
@@ -43,7 +43,7 @@ const Projects = () => {
                                     to={project.link}
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='font-semibold text-blue-600'>
+                                    className='font-semibold text-secondary'>
                                     Live Link
                                 </Link>
                             </div>

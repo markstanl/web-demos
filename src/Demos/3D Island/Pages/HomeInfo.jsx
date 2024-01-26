@@ -14,7 +14,7 @@ const InfoBox = ({ text, link, btnText }) => (
 
 const renderContent = {
     1: (
-        <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue
+        <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-primary
         py-4 px-8 text-white mx-5"
         >Hi, I am <span className='font-semibold'> Mark </span> 👋
             <br />
@@ -29,7 +29,7 @@ const renderContent = {
     ),
     3: (
         <InfoBox
-            text="Am a very successfull student"
+            text="I've made some good projects, check them out!"
             link="/3d-island/projects"
             btnText="Visit my portfolio" />
     ),

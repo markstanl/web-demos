@@ -13,3 +13,4 @@ export { default as nodejs } from './nodejs.png';
 export { default as contact } from './contact.png';
 export { default as soundOn } from './soundon.png';
 export { default as soundOff } from './soundoff.png';
+export { default as home } from './home.png';

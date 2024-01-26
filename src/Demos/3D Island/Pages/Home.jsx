@@ -5,8 +5,9 @@ import Island from '../Models/island.jsx';
 import Sky from '../Models/Sky.jsx';
 import Plane from '../Models/Plane.jsx';
 import HomeInfo from './HomeInfo.jsx';
+import { NavLink } from 'react-router-dom';
 
-import { soundOn, soundOff } from '../assets/icons';
+import { soundOn, soundOff, home } from '../assets/icons';
 
 import audio from '../assets/audio.mp3';
 
@@ -101,6 +102,17 @@ export default function Home() {
                     className='w-10 h-10 cursor-pointer object-contain'
                     onClick={() => setIsPlaying(!isPlaying)}
                 />
+            </div>
+            <div className='absolute bottom-2 right-2'>
+                <NavLink
+                    to='/'
+                >
+                    <img
+                        src={home}
+                        alt='Home'
+                        className='w-10 h-10 cursor-pointer object-contain'
+                    />
+                </NavLink>
             </div>
         </section>);
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import ThreeIslandNavbar from './ThreeIslandNavbar.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './Three.css';
 import { Home, About, Projects, Contact } from './Pages';
 
 export default function ThreeIslandMain() {

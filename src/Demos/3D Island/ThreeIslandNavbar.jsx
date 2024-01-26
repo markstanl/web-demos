@@ -8,18 +8,18 @@ export default function ThreeIslandNavbar() {
                 to="/3d-island"
                 className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
             >
-                <p className="blue-text-gradient">ms</p>
+                <p className="primary-accent-gradient">ms</p>
             </NavLink>
             <nav className="flex text-lg gap-7 font-medium">
                 <NavLink
                     to="/3d-island/about"
-                    className={({ isActive }) => (isActive ? "text-blue-500" : "text-black")}
+                    className={({ isActive }) => (isActive ? "text-primary" : "text-black")}
                 >
                     About
                 </NavLink>
                 <NavLink
                     to="/3d-island/projects"
-                    className={({ isActive }) => (isActive ? "text-blue-500" : "text-black")}
+                    className={({ isActive }) => (isActive ? "text-primary" : "text-black")}
                 >
                     Projects
                 </NavLink>
