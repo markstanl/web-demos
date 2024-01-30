@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import homeProjects from './homeProjects';
-import { NavLink } from 'react-router-dom';
 import './Home.css';
+import DefaultButton from './buttons/DefaultButton';
 
 export default function Home() {
 
@@ -35,8 +35,10 @@ export default function Home() {
             </div>
             <div className='flex flex-wrap pl-20 pr-20 justify-center'>
                 {homeProjects.map((project, index) => (
-                    <div className='block-container w-96 h-80 bg-green-200 ml-10 mb-10'>
-                        {project.component ? <project.component /> : project.title}
+                    <div className='block-container items-center justify-center w-96 h-80 ml-10 mb-10'>
+                        {project.component ? <project.component backgroundColor={isDarkMode ? "Black" : "White"} /> : <DefaultButton
+                            title={project.title}
+                            link={project.path} />}
                     </div>
                 )
                 )}

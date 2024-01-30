@@ -12,6 +12,11 @@ module.exports = {
         "black-200": "#090325",
         "white-100": "#f3f3f3",
         'custom-blue': '#c5d8e2',
+        'text-locomotive': '#283618',
+        'background-locomotive': '#f3f3f3',
+        'primary-locomotive': '#606C38',
+        'secondary-locomotive': '#DDA15E',
+        'accent-locomotive': '#BC6C25',
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -24,6 +29,7 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
+        'zen-maru': ['Zen Maru Gothic', 'sans-serif'],
       },
     },
   },

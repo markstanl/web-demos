@@ -9,7 +9,7 @@ export default function ThreeIslandMain() {
 
 
     return (
-        <main className={`bg-slate-300/20 h-full`}>
+        <main className={`bg-slate-300/20 h-full font-poppins`}>
             <ThreeIslandNavbar />
             <Routes>
                 <Route path="/" element={<Home />} />

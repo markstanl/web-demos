@@ -8,7 +8,7 @@ export default [
     },
     {
         title: "Parallax Effect",
-        path: '/parallax-effect',
+        path: '/locomotive-scroll',
     },
     {
         title: '3D Cube',

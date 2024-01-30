@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* color-scheme: dark; */
+}
+
+.primary-secondary-gradient-locomotive {
+    background: #606C38;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,
+            #606C38,
+            #DDA15E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,
+            #606C38,
+            #DDA15E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.primary-accent-gradient-locomotive {
+    background: #606C38;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,
+            #606C38,
+            #BC6C25);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,
+            #606C38,
+            #BC6C25);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.secondary-accent-gradient-locomotive {
+    background: #BC6C25;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,
+            #BC6C25,
+            #DDA15E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,
+            #BC6C25,
+            #DDA15E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
