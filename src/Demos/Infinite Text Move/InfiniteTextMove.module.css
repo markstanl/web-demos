@@ -1,0 +1,48 @@
+.main{
+    position: relative;
+    display: flex-column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .main img{
+    object-fit: cover;
+  }
+  
+  .sliderContainer{
+    position: absolute;
+    top: 250px;
+  }
+  
+  .slider{
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .slider p{
+    position: relative;
+    margin: 0px;
+    color: #F3F5F6;
+    font-size: 230px;
+    font-weight: 500;
+    padding-right: 50px;
+  }
+  
+  .slider p:nth-of-type(2){
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+
+  .navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0A1412;
+    height: 50px;
+    color: #F3F5F6;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    font-size:  20px;
+  }

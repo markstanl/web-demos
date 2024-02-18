@@ -13,7 +13,7 @@ module.exports = {
         "white-100": "#f3f3f3",
         'custom-blue': '#c5d8e2',
         'text-locomotive': '#283618',
-        'background-locomotive': '#f3f3f3',
+        'background-locomotive': '#FEFAE0',
         'primary-locomotive': '#606C38',
         'secondary-locomotive': '#DDA15E',
         'accent-locomotive': '#BC6C25',
