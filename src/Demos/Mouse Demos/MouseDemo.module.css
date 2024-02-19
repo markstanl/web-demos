@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+.noCursor {
+    cursor: none !important;
+  }
+
+.federo{
+    font-family: "Federo", sans-serif;
+    font-size: 5rem;
+}

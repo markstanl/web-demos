@@ -1,40 +1,57 @@
 import React, { useState } from "react";
+import styles from "./MouseDemo.module.css";
+import { NavLink } from "react-router-dom";
 
-const MouseDemosNavbar = () => {
-  const [mouseCircleFollow, setMouseCircleFollow] = useState(false);
+const MouseDemosNavbar = ({ setMouse, cursorStyle, setMouseOverNavbar }) => {
+  const [isHover, setIsHover] = useState(null);
+  const buttonNumbers = [1, 2, 3, 4, 5, 6];
 
-  const handleChange = (e) => {
-    switch (value) {
-      case 1:
-        setMouseCircleFollow(true);
-        break;
-      case 2:
-        setMouseCircleFollow(false);
-        break;
-      default:
-        setMouseCircleFollow(false);
-    }
-  };
-
-  const setAllFalse = () => {
-    setMouseCircleFollow(false);
-  };
+  console.log(cursorStyle);
 
   return (
-    <nav className="bg-[#863744] w-full h-16">
+    <nav
+      className="bg-[#863744] w-full h-16 fixed flex flex-row items-center"
+      onMouseEnter={() => setMouseOverNavbar(true)}
+      onMouseLeave={() => setMouseOverNavbar(false)}
+      style={{ fontFamily: "Federo, sans-serif" }}
+    >
       <ul
         style={{
+          width: "100%",
           display: "flex",
+          flexDirection: "row",
           justifyContent: "space-around",
           listStyle: "none",
+          alignItems: "center",
         }}
       >
-        <button>{`Button 1`}</button>
-        <button>{`Button 2`}</button>
-        <button>{`Button 3`}</button>
-        <button>{`Button 4`}</button>
-        <button>{`Button 5`}</button>
-        <button>{`Button 6`}</button>
+        {buttonNumbers.map((number) => (
+          <button
+            key={number}
+            onClick={() => setMouse(number)}
+            className={cursorStyle === "none" ? styles.noCursor : ""}
+            style={{
+              color: isHover === number ? "white" : "black",
+              fontFamily: "Federo, sans-serif",
+            }}
+            onMouseEnter={() => setIsHover(number)}
+            onMouseLeave={() => setIsHover(null)}
+          >
+            {`Button ${number}`}
+          </button>
+        ))}
+        <NavLink
+          to="/"
+          className={cursorStyle === "none" ? styles.noCursor : ""}
+          style={{
+            color: isHover === 7 ? "white" : "black",
+            fontFamily: "Federo, sans-serif",
+          }}
+          onMouseEnter={() => setIsHover(7)}
+          onMouseLeave={() => setIsHover(null)}
+        >
+          Home
+        </NavLink>
       </ul>
     </nav>
   );
