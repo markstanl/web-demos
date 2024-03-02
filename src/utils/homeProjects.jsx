@@ -1,5 +1,6 @@
 import { ThreeDIslandButton } from "../Demos/Home/buttons";
 import { InfiniteScrollGSAPButton } from "../Demos/Home/buttons";
+import { CampingDemoButton } from "../Demos/Home/buttons";
 
 export default [
   {
@@ -17,8 +18,9 @@ export default [
     path: "/mouse-demos",
   },
   {
-    title: "3D Cube",
-    path: "/3d-cube",
+    title: "Camping Demo",
+    path: "/camping-demo",
+    component: CampingDemoButton,
   },
   {
     title: "3D Cube",

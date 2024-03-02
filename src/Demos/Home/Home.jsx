@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import homeProjects from "../../utils/homeProjects";
 import "./Home.css";
 import DefaultButton from "./buttons/DefaultButton";
+import logoImage from "./weblogodemo.png";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,27 +27,9 @@ export default function Home() {
   /* Once we get some projects down, we will make an individual box style for each */
 
   return (
-    <div style={{ backgroundColor: isDarkMode ? "#0C180D" : "#F1F9F3" }}>
+    <div style={{ backgroundColor: isDarkMode ? "#C2F0FF" : "#C2F0FF" }}>
       <div style={{ display: "grid" }}>
-        <h1
-          style={{
-            ...h1Style,
-            textAlign: "left",
-            color: isDarkMode ? "#f1f9f3" : "black",
-          }}
-        >
-          WEB DEV
-        </h1>
-        <h1
-          style={{
-            ...h1Style,
-            textAlign: "right",
-            marginTop: -100,
-            color: "#57bc5b",
-          }}
-        >
-          DEMOS
-        </h1>
+        <img src={logoImage} alt="WEB DEMOS" className="w-full" />
       </div>
       <div className="flex flex-wrap pl-20 pr-20 justify-center">
         {homeProjects.map((project, index) => (

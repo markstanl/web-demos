@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import MouseDemosNavbar from "./MouseDemosNavbar";
 import MouseDemo1 from "./MouseDemo1";
 import MouseDemo2 from "./MouseDemo2";
-
 const MouseDemos = () => {
   const [currentMouseDemo, setCurrentMouseDemo] = useState(null);
   const [mouseOverNavbar, setMouseOverNavbar] = useState(false);
