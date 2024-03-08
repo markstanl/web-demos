@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ButtonComponent from "./1ModernButtonComponent";
 import github from "./Assets/github.png";
-import linkedin from "./assets/linkedin.png";
+import linkedin from "./Assets/linkedin.png";
 import About from "./1ModernLandingAbout";
 import Projects from "./1ModernLandingProjects";
 import Timeline from "./TimelineModernProjects";
