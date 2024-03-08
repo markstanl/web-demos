@@ -1,7 +1,7 @@
-# Web Demos
+# [Web Demos](https://web-demos-demos-4rcjcvoes-markstanls-projects.vercel.app/)
 This website consists of small project demos that I work on. From 3D designs to cool business animations. If I see a cool trend that I wish to try out, the code
 for it will end up on this website. This website is built using React + Vite. Most Demos describe what technology was used, if any, and an outline of 
-the inspiration, and what I learned.
+the inspiration, and what I learned. Hosted on Vercel
 
 # Technologies
 ## TailwindCSS
