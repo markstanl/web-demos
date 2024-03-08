@@ -3,7 +3,7 @@ import BlogPost from "./BlogPost";
 
 const Blog = () => {
   return (
-    <div className="w-3/5 h-full bg-black mb-10">
+    <div className="w-3/5 h-[60rem] bg-black mb-10">
       <h1 className="text-white text-2xl mt-28 font-bold mb-4">Blog</h1>
       <BlogPost
         title="This portfolio was inspired by an old version of https://www.alirezasamadi.com/"

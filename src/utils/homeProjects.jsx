@@ -1,6 +1,7 @@
 import { ThreeDIslandButton } from "../Demos/Home/buttons";
 import { InfiniteScrollGSAPButton } from "../Demos/Home/buttons";
 import { CampingDemoButton } from "../Demos/Home/buttons";
+import { ModernPortfolioButton } from "../Demos/Home/buttons";
 
 export default [
   {
@@ -21,6 +22,11 @@ export default [
     title: "Camping Demo",
     path: "/camping-demo",
     component: CampingDemoButton,
+  },
+  {
+    title: "Modern Dark Portfolio",
+    path: "/modern-dark-portfolio",
+    component: ModernPortfolioButton,
   },
   {
     title: "3D Cube",
