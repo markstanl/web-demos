@@ -17,6 +17,7 @@ module.exports = {
         "primary-locomotive": "#606C38",
         "secondary-locomotive": "#DDA15E",
         "accent-locomotive": "#BC6C25",
+        "modern-portfolio-button-blue": "#48bfe3",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -31,6 +32,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         "zen-maru": ["Zen Maru Gothic", "sans-serif"],
         playfair: ["Playfair Display", "serif"],
+        inter: ["Inter", "sans-serif"],
       },
       fontWeight: {
         medium: "500",
