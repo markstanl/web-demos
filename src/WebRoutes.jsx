@@ -7,6 +7,7 @@ import InfiniteTextMove from "./Demos/Infinite Text Move/InfiniteTextMove";
 import MouseDemos from "./Demos/Mouse Demos/MouseDemos";
 import CampingHome from "./Demos/Camping Demo/CampingHome";
 import ModernPortfolio from "./Demos/Alriez Portfolio/1ModernPortfolio";
+import PosterMain from "./Demos/Twitter Clone/PosterMain";
 
 export default function WebRoutes() {
   return (
@@ -19,6 +20,7 @@ export default function WebRoutes() {
         <Route path="/mouse-demos/*" element={<MouseDemos />} />
         <Route path="/camping-demo/*" element={<CampingHome />} />
         <Route path="/modern-dark-portfolio/*" element={<ModernPortfolio />} />
+        <Route path="/flamingo-post/*" element={<PosterMain />} />
       </Routes>
     </Router>
   );

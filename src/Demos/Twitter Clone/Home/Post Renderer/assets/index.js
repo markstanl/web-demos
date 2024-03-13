@@ -1,0 +1,12 @@
+export { default as person1 } from "./person1.jpeg";
+export { default as person2 } from "./person2.jpeg";
+export { default as person3 } from "./person3.jpeg";
+export { default as person4 } from "./person4.jpeg";
+export { default as person5 } from "./person5.jpeg";
+export { default as person6 } from "./person6.jpeg";
+export { default as person7 } from "./person7.jpeg";
+export { default as person8 } from "./person8.jpeg";
+export { default as person9 } from "./person9.jpeg";
+export { default as person10 } from "./person10.jpeg";
+export { default as profile } from "./profile.png";
+export { default as person12 } from "./person12.jpg";
