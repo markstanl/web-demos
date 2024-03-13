@@ -1,7 +1,10 @@
-import { ThreeDIslandButton } from "../Demos/Home/buttons";
-import { InfiniteScrollGSAPButton } from "../Demos/Home/buttons";
-import { CampingDemoButton } from "../Demos/Home/buttons";
-import { ModernPortfolioButton } from "../Demos/Home/buttons";
+import {
+  ThreeDIslandButton,
+  InfiniteScrollGSAPButton,
+  CampingDemoButton,
+  ModernPortfolioButton,
+  TwitterCloneButton,
+} from "../Demos/Home/buttons";
 
 export default [
   {
@@ -29,7 +32,8 @@ export default [
     component: ModernPortfolioButton,
   },
   {
-    title: "3D Cube",
-    path: "/3d-cube",
+    title: "Twitter Clone",
+    path: "/flamingo-post",
+    component: TwitterCloneButton,
   },
 ];
